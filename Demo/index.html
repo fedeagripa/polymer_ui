@@ -21,21 +21,59 @@
             background: #2faded;
             --paper-button-ink-color: #1817ed;
         }
+
+        .banner-header{
+            font-family: Helvetica;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+            font-size: 3.5rem;
+            letter-spacing: .6px;
+        }
+
+        .banner-subtitle{
+            font-family: Helvetica;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 45%;
+            left: 0;
+            right: 0;
+            font-size: 2rem;
+            letter-spacing: .6px;
+        }
+
+        .banner-container {
+            background-image: url("../Resources/banner.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 20.38rem;
+        }
     </style>
 
 
 </head>
-<body class="fullbleed layout vertical">
+    <body class="fullbleed layout vertical">
 
 
-<paper-header-panel class="flex">
-    <paper-toolbar class="black">
-        <div class="title"><iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image></div>
-        <paper-button>About</paper-button>
-        <paper-button>The Saga</paper-button>
-        <paper-button>Books</paper-button>
-        <paper-button class="signUp" raised>Sign up</paper-button>
-    </paper-toolbar>
-</paper-header-panel>
-</body>
+     <paper-header-panel class="flex">
+         <paper-toolbar class="black">
+             <div class="title">
+                 <iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image>
+             </div>
+             <paper-button>About</paper-button>
+             <paper-button>The Saga</paper-button>
+             <paper-button>Books</paper-button>
+            <paper-button class="signUp" raised>Sign up</paper-button>
+        </paper-toolbar>
+    </paper-header-panel>
+     <div class="banner-container">
+         <h1 class="banner-header">VERONICA ROTH</h1>
+         <h2 class="banner-subtitle">#1 New York Times bestselling author of Divergent</h2>
+     </div>
+    </body>
 </html>
