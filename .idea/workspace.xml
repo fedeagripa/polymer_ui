@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30ce0959-2050-46f4-ab7c-e3af50c6e126" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/index.html" afterPath="$PROJECT_DIR$/Demo/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="repo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,12 +26,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36329588">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.17602997">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
               <folding>
-                <element signature="e#962#1229#0" expanded="false" />
-                <element signature="e#1255#1520#0" expanded="false" />
-                <element signature="e#1548#1762#0" expanded="false" />
+                <element signature="e#1038#1305#0" expanded="false" />
+                <element signature="e#1624#1838#0" expanded="false" />
                 <element signature="n#style#0;n#iron-image#0;n#div#0;n#paper-toolbar#0;n#paper-header-panel#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -238,12 +236,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36329588">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.17602997">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
           <folding>
-            <element signature="e#962#1229#0" expanded="false" />
-            <element signature="e#1255#1520#0" expanded="false" />
-            <element signature="e#1548#1762#0" expanded="false" />
+            <element signature="e#1038#1305#0" expanded="false" />
+            <element signature="e#1624#1838#0" expanded="false" />
             <element signature="n#style#0;n#iron-image#0;n#div#0;n#paper-toolbar#0;n#paper-header-panel#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

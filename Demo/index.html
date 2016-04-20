@@ -10,6 +10,7 @@
     <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
     <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
+    <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
 
     <style is="custom-style">
         paper-toolbar.black {
@@ -53,13 +54,26 @@
             position: relative;
             height: 20.38rem;
         }
+
+        .information-container{
+            background-color: #fac8cd;
+            padding: 1rem;
+        }
+
+        .information-paragraph{
+            margin: 1rem;
+            text-align: justify;
+            font-family: Helvetica;
+        }
+
+        .information-title{
+            text-align: center;
+        }
     </style>
 
 
 </head>
     <body class="fullbleed layout vertical">
-
-
      <paper-header-panel class="flex">
          <paper-toolbar class="black">
              <div class="title">
@@ -74,6 +88,26 @@
      <div class="banner-container">
          <h1 class="banner-header">VERONICA ROTH</h1>
          <h2 class="banner-subtitle">#1 New York Times bestselling author of Divergent</h2>
+     </div>
+     <div class="information-container">
+         <iron-grid>
+            <div class="s6">
+                <div class="information-paragraph">
+                    <h3 class="information-title">About Veronica</h3>
+                    <p>Veronica Roth was born on August 19, 1988 in New York City, and was raised primarily in Barrington, Illinois.</p>
+                    <p>She is of German and Polish descent. Roth says of her father: "He had a job, and worked far away. Now I have a good relationship with my stepdad". Her maternal grandparents were concentration camp survivors, whose religious convictions pushed her mother away from religion. Veronica Roth learned about Christianity by attending a Christian Bible study during her high school years, and has stayed with it.</p>
+                    <p>Roth graduated from Barrington High School. After attending a year of college at Carleton College, she transferred to Northwestern University for its creative writing program. She married photographer Nelson Fitch in 2011. They reside in the Chicago area.</p>
+                </div>
+            </div>
+             <div class="s6">
+                 <div class="information-paragraph">
+                     <h3 class="information-title">Career</h3>
+                    <p>Veronica Roth is best known for her trilogy of novels: Divergent, Insurgent, and Allegiant; Allegiant was released on October 22, 2013.</p>
+                   <p>She is the recipient of the Goodreads 2011 Choice Award and the Best of 2012 in the category Young Adult Fantasy & Science Fiction and also Best Goodreads Author in 2012. Roth wrote her first book, Divergent, while on winter break in her senior year at Northwestern University. Her career took off rapidly with the success of her first novel, with the publishing rights sold before she graduated from college in 2010 and the film rights sold mid-March 2011, before the novel was printed in April 2011.</p>
+                   <p>Roth sold the film rights to The Divergent Series to Summit Entertainment.</p>
+                 </div>
+             </div>
+         </iron-grid>
      </div>
     </body>
 </html>
