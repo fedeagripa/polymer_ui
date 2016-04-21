@@ -26,6 +26,19 @@
         }
     </style>
     <style is="custom-style">
+        .related-books{
+            background-color: #bbb;
+        }
+        .myFooter{
+            background-color: #232222;
+            color:#fff;
+        }
+        .book-detail{
+            background-color: #fac8cd;
+            height: 20rem;
+        }
+    </style>
+    <style is="custom-style">
       #example-full-height-container {
         height: 250px;
         border: 2px solid #444;
@@ -73,18 +86,19 @@
 <body class="fullbleed layout vertical">
 <div>
 <paper-header-panel class="flex">
-    <paper-toolbar class="black">
-        <div class="title"><iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image></div>
-        <paper-button>About</paper-button>
-        <paper-button>The Saga</paper-button>
-        <paper-button>Books</paper-button>
-        <paper-button class="signUp" raised>Sign up</paper-button>
-    </paper-toolbar>
-</paper-header-panel>
+         <paper-toolbar class="black">
+             <div class="title">
+                 <iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image>
+             </div>
+             <paper-button>About</paper-button>
+             <paper-button>The Saga</paper-button>
+             <paper-button>Books</paper-button>
+            <paper-button class="signUp" raised>Sign up</paper-button>
+        </paper-toolbar>
+    </paper-header-panel>
 </div>
-
 <!--BOOK DETAIL START-->
-<div class="layout horizontal">
+<div class="layout horizontal book-detail">
 <div>
     <div id="example-full-height-container2">
         <iron-image id="example-full-height2" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
@@ -109,23 +123,35 @@
 </div>
 <!--COMMENTS END-->
 <!--RELATED BOOK START-->
+<div class="related-books">
 <div class="horizontal center-justified layout">
   <div><h2>Other products of the author</h2></div>
 </div>
 <div class="horizontal around-justified layout" >
     <div id="example-full-height-container">
-  <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
+        <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
     </div>
     <div id="example-full-height-container">
-  <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book2.jpg"></iron-image>
+        <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book2.jpg"></iron-image>
     </div>
     <div id="example-full-height-container">
-  <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book3.jpg"></iron-image>
+        <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book3.jpg"></iron-image>
     </div>
+</div>
 </div>
 <!--RELATED BOOK END-->
 <!--FOOTER START-->
+<div class="myFooter">
+    Contact
 
+    78 East 88th Street, Suite 209 
+    New York, NY, 10221 
+    1-347-567-8670
+
+    info@veronicaroth.com
+    Follow Me
+
+</div>
 <!--FOOTER END-->
 </body>
 </html>
