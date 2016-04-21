@@ -36,7 +36,7 @@
         }
 
         .banner-subtitle{
-            font-family: Helvetica;
+            font-family: Roboto;
             text-align: center;
             color: white;
             position: absolute;
@@ -63,11 +63,26 @@
         .information-paragraph{
             margin: 1rem;
             text-align: justify;
-            font-family: Helvetica;
+            font-family: Roboto;
+            line-height: 1.8;
+            font-weight: 300;
         }
 
         .information-title{
             text-align: center;
+        }
+
+        .saga-container{
+            margin:1rem;
+            background-color: #fffffa;
+        }
+
+        .saga-text{
+            margin: 1rem;
+            text-align: justify;
+            font-family: Roboto;
+            line-height: 1.8;
+            font-weight: 300;
         }
     </style>
 
@@ -91,7 +106,7 @@
      </div>
      <div class="information-container">
          <iron-grid>
-            <div class="s6">
+            <div class="s6 xs12">
                 <div class="information-paragraph">
                     <h3 class="information-title">About Veronica</h3>
                     <p>Veronica Roth was born on August 19, 1988 in New York City, and was raised primarily in Barrington, Illinois.</p>
@@ -99,12 +114,27 @@
                     <p>Roth graduated from Barrington High School. After attending a year of college at Carleton College, she transferred to Northwestern University for its creative writing program. She married photographer Nelson Fitch in 2011. They reside in the Chicago area.</p>
                 </div>
             </div>
-             <div class="s6">
+             <div class="s6 xs12">
                  <div class="information-paragraph">
                      <h3 class="information-title">Career</h3>
                     <p>Veronica Roth is best known for her trilogy of novels: Divergent, Insurgent, and Allegiant; Allegiant was released on October 22, 2013.</p>
                    <p>She is the recipient of the Goodreads 2011 Choice Award and the Best of 2012 in the category Young Adult Fantasy & Science Fiction and also Best Goodreads Author in 2012. Roth wrote her first book, Divergent, while on winter break in her senior year at Northwestern University. Her career took off rapidly with the success of her first novel, with the publishing rights sold before she graduated from college in 2010 and the film rights sold mid-March 2011, before the novel was printed in April 2011.</p>
                    <p>Roth sold the film rights to The Divergent Series to Summit Entertainment.</p>
+                 </div>
+             </div>
+         </iron-grid>
+     </div>
+     <div class="saga-container">
+         <iron-grid>
+             <div class="m4 s5 xs12">
+                 <iron-image style="width: 100%;" sizing="contain" src="../Resources/Divergent-Series.png"></iron-image>
+             </div>
+             <div class="m8 s9 xs12">
+                 <div class="saga-text">
+                     <h3 style="font-size: 2rem">The Divergent Saga</h3>
+                 <p>The Divergent trilogy is a series of young adult science fiction adventure novels by Veronica Roth set in a post-apocalyptic dystopian Chicago. The trilogy consists of Divergent (2011), Insurgent (2012) and Allegiant (2013). </p>
+                 <p>The society of the trilogy defines its citizens by their social and personality-related affiliation with five different factions, which removes the threat of anyone exercising independent will and threatening the population's safety. Beatrice Prior, who later changes her name to Tris, an Abnegation-born and Dauntless transfer, must figure out her life as a Divergent, while concealing her true nature, and living with the danger of being killed if it is discovered by the Erudite and Dauntless leaders.</p>
+                 <p>“We believe in ordinary acts of bravery, in the courage that drives one person to stand up for another.” ― Veronica Roth, Divergent</p>
                  </div>
              </div>
          </iron-grid>

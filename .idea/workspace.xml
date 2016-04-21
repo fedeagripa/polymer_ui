@@ -26,12 +26,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17602997">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.68164796">
+              <caret line="129" column="66" selection-start-line="129" selection-start-column="66" selection-end-line="129" selection-end-column="66" />
               <folding>
                 <element signature="e#1038#1305#0" expanded="false" />
-                <element signature="e#1624#1838#0" expanded="false" />
+                <element signature="e#1621#1835#0" expanded="false" />
                 <element signature="n#style#0;n#iron-image#0;n#div#0;n#paper-toolbar#0;n#paper-header-panel#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#iron-grid#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#iron-image#0;n#div#0;n#iron-grid#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#iron-grid#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -236,12 +239,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17602997">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.68164796">
+          <caret line="129" column="66" selection-start-line="129" selection-start-column="66" selection-end-line="129" selection-end-column="66" />
           <folding>
             <element signature="e#1038#1305#0" expanded="false" />
-            <element signature="e#1624#1838#0" expanded="false" />
+            <element signature="e#1621#1835#0" expanded="false" />
             <element signature="n#style#0;n#iron-image#0;n#div#0;n#paper-toolbar#0;n#paper-header-panel#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#iron-grid#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#iron-image#0;n#div#0;n#iron-grid#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#iron-grid#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
