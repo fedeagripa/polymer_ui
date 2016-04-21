@@ -11,6 +11,7 @@
     <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+    <link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
 
     <style is="custom-style">
         paper-toolbar.black {
@@ -84,6 +85,23 @@
             line-height: 1.8;
             font-weight: 300;
         }
+
+        .footer{
+            background-color: #232222;
+            padding-right: 4rem;
+            padding-left: 16rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            color: white;
+            height:250px;
+        }
+
+        .footer-text{
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
     </style>
 
 
@@ -126,10 +144,10 @@
      </div>
      <div class="saga-container">
          <iron-grid>
-             <div class="m4 s5 xs12">
+             <div class="m4 s12 xs12">
                  <iron-image style="width: 100%;" sizing="contain" src="../Resources/Divergent-Series.png"></iron-image>
              </div>
-             <div class="m8 s9 xs12">
+             <div class="m8 s12 xs12">
                  <div class="saga-text">
                      <h3 style="font-size: 2rem">The Divergent Saga</h3>
                  <p>The Divergent trilogy is a series of young adult science fiction adventure novels by Veronica Roth set in a post-apocalyptic dystopian Chicago. The trilogy consists of Divergent (2011), Insurgent (2012) and Allegiant (2013). </p>
@@ -139,5 +157,38 @@
              </div>
          </iron-grid>
      </div>
+    <div class="books-container">
+
+    </div>
+    <div class="footer">
+        <iron-grid>
+            <div class="s6">
+                <div class="xs12">
+                <h3 class="footer-text">Contact</h3>
+                </div>
+                <div class="xs12">
+                <br>78 East 88th Street, Suite 209</br>
+                <br>New York, NY, 10221</br>
+                <br>1-347-567-8670</br>
+                <br>
+                <br>info@veronicaroth.com</br>
+                </div>
+            </div>
+            <div class="s6" style="display: block">
+                <div class="xs12">
+                    <h3 class="footer-text">Follow Me</h3>
+                </div>
+                <div class="xs12">
+                    <iron-image src="../Resources/Twitter.png"></iron-image>
+                    <iron-image src="../Resources/Facebook.png"></iron-image>
+                    <iron-image src="../Resources/Youtube.png"></iron-image>
+                </div>
+
+
+
+            </div>
+        </iron-grid>
+        <p style="text-align: center">© Veronica Roth 2016 - All rights reserved</p>
+    </div>
     </body>
 </html>
