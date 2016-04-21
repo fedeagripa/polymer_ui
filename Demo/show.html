@@ -8,8 +8,11 @@
     <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
     <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
-    <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+    <link rel="import" href="../bower_components/iron-image/iron-image.html">
+    <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+    <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
 
     <style is="custom-style">
         paper-toolbar.black {
@@ -22,12 +25,53 @@
             --paper-button-ink-color: #1817ed;
         }
     </style>
+    <style is="custom-style">
+      #example-full-height-container {
+        height: 250px;
+        border: 2px solid #444;
+        background: #444;
+      }
 
+      #example-full-height-container iron-image{
+        background: #ddd;
+      }
+
+      #example-full-height {
+        height: 100%;
+        --iron-image-height: 100%;
+      }
+
+      #example-half-height {
+        height: 50%;
+        --iron-image-height: 100%;
+      }
+    </style>
+    <style is="custom-style">
+      #example-full-height-container2 {
+        height: 250px;
+        border: 2px solid #444;
+        background: #444;
+      }
+
+      #example-full-height-container2 iron-image{
+        background: #ddd;
+      }
+
+      #example-full-height2 {
+        height: 100%;
+        --iron-image-height: 100%;
+      }
+
+      #example-half-height2 {
+        height: 50%;
+        --iron-image-height: 100%;
+      }
+    </style>
+    <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
 
 </head>
 <body class="fullbleed layout vertical">
-
-
+<div>
 <paper-header-panel class="flex">
     <paper-toolbar class="black">
         <div class="title"><iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image></div>
@@ -37,5 +81,51 @@
         <paper-button class="signUp" raised>Sign up</paper-button>
     </paper-toolbar>
 </paper-header-panel>
+</div>
+
+<!--BOOK DETAIL START-->
+<div class="layout horizontal">
+<div>
+    <div id="example-full-height-container2">
+        <iron-image id="example-full-height2" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
+    </div>
+</div>
+<div class="flex">
+    <h2>DIVERGENT</h2>
+    <h3> $199 </h3>
+</div>
+<div >
+    <h2>AVAILABLE</h2>
+</div>
+</div>
+<!--BOOK DETAIL END-->
+<!--COMMENTS START-->
+<div class="horizontal center-justified layout">
+  <div><h2>The press says</h2></div>
+</div>
+
+<div class="horizontal center-justified layout">
+  <div><h2>The readers say</h2></div>
+</div>
+<!--COMMENTS END-->
+<!--RELATED BOOK START-->
+<div class="horizontal center-justified layout">
+  <div><h2>Other products of the author</h2></div>
+</div>
+<div class="horizontal around-justified layout" >
+    <div id="example-full-height-container">
+  <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
+    </div>
+    <div id="example-full-height-container">
+  <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book2.jpg"></iron-image>
+    </div>
+    <div id="example-full-height-container">
+  <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book3.jpg"></iron-image>
+    </div>
+</div>
+<!--RELATED BOOK END-->
+<!--FOOTER START-->
+
+<!--FOOTER END-->
 </body>
 </html>
