@@ -12,6 +12,7 @@
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
     <link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
+    <link rel="import" href="../my_components/book-card.html">
 
     <style is="custom-style">
         paper-toolbar.black {
@@ -86,6 +87,12 @@
             font-weight: 300;
         }
 
+        .books-container{
+            background-color: #bbbbbb;
+            padding: 3rem;
+
+        }
+
         .footer{
             background-color: #232222;
             padding-right: 4rem;
@@ -158,7 +165,14 @@
          </iron-grid>
      </div>
     <div class="books-container">
-
+        <iron-grid>
+            <div class="m4 s12"><book-card
+                    book='{"name": "Divergent", "image": "../Resources/book1.jpg", "price":"$199"}'></book-card></div>
+            <div class="m4 s12"><book-card
+                    book='{"name": "Insurgent", "image": "../Resources/book2.jpg", "price":"$199"}'></book-card></div>
+            <div class="m4 s12"><book-card
+                    book='{"name": "Allegiant", "image": "../Resources/book3.jpg", "price":"$199"}'></book-card></div>
+        </iron-grid>
     </div>
     <div class="footer">
         <iron-grid>

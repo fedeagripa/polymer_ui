@@ -1,0 +1,90 @@
+a<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!--
+A responsive comment card element
+
+Example:
+
+    <comment-card></comment-card>
+
+@demo
+-->
+<link rel="import" href="../iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+
+<dom-module id="book-card">
+    <style>
+        #book-container{
+            width: 100%;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .xs12{
+            display: inline-block;
+        }
+
+        iron-image{
+            height: 227px;
+            width: 150px;
+
+        }
+        #book-name{
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        #book-price{
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        #buy-button{
+            background-color: #0b132b;
+            color: white;
+        }
+    </style>
+    <template>
+        <div id="book-container">
+            <iron-grid>
+                <div class="xs12"><iron-image sizing="contain" src="[[book.image]]"></iron-image></div>
+                <div class="xs12"><span id="book-name">[[ book.name ]]</span></div>
+                <div class="xs12"><span id="book-price">[[book.price]]</span></div>
+                <div class="xs12"><paper-button id="buy-button">Buy</paper-button></div>
+            </iron-grid>
+        </div>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is: 'book-card',
+        properties:{
+            book:{
+                type: Object,
+                value: function() {
+                    return {
+                        name: 'DefaultName',
+                        image: '../Resources/book1.jpg',
+                        price: '$199',
+                    };
+                }
+            },
+
+        }
+    });
+</script>
