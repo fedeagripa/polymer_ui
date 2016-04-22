@@ -13,6 +13,7 @@
     <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+    <link rel="import" href="../my_components/book-card.html">
 
     <style is="custom-style">
         paper-toolbar.black {
@@ -79,6 +80,30 @@
         height: 50%;
         --iron-image-height: 100%;
       }
+
+      .books-container{
+          background-color: #bbbbbb;
+          padding: 3rem;
+
+      }
+
+      .footer{
+          background-color: #232222;
+          padding-right: 4rem;
+          padding-left: 16rem;
+          padding-top: 5rem;
+          padding-bottom: 5rem;
+          color: white;
+          height:250px;
+      }
+
+      .footer-text{
+          font-family: Montserrat;
+          font-weight: 600;
+          font-size: 1.3rem;
+          line-height: 1.4;
+      }
+
     </style>
     <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
 
@@ -127,30 +152,48 @@
 <div class="horizontal center-justified layout">
   <div><h2>Other products of the author</h2></div>
 </div>
-<div class="horizontal around-justified layout" >
-    <div id="example-full-height-container">
-        <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
+    <div class="books-container">
+        <iron-grid>
+            <div class="m4 s12"><book-card
+                    book='{"name": "Divergent", "image": "../Resources/book1.jpg", "price":"$199"}'></book-card></div>
+            <div class="m4 s12"><book-card
+                    book='{"name": "Insurgent", "image": "../Resources/book2.jpg", "price":"$199"}'></book-card></div>
+            <div class="m4 s12"><book-card
+                    book='{"name": "Allegiant", "image": "../Resources/book3.jpg", "price":"$199"}'></book-card></div>
+        </iron-grid>
     </div>
-    <div id="example-full-height-container">
-        <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book2.jpg"></iron-image>
-    </div>
-    <div id="example-full-height-container">
-        <iron-image id="example-full-height" alt="The Polymer logo." src="../Resources/book3.jpg"></iron-image>
-    </div>
-</div>
 </div>
 <!--RELATED BOOK END-->
 <!--FOOTER START-->
-<div class="myFooter">
-    Contact
+<div class="footer">
+    <iron-grid>
+        <div class="s6">
+            <div class="xs12">
+                <h3 class="footer-text">Contact</h3>
+            </div>
+            <div class="xs12">
+                <br>78 East 88th Street, Suite 209</br>
+                <br>New York, NY, 10221</br>
+                <br>1-347-567-8670</br>
+                <br>
+                <br>info@veronicaroth.com</br>
+            </div>
+        </div>
+        <div class="s6" style="display: block">
+            <div class="xs12">
+                <h3 class="footer-text">Follow Me</h3>
+            </div>
+            <div class="xs12">
+                <iron-image src="../Resources/Twitter.png"></iron-image>
+                <iron-image src="../Resources/Facebook.png"></iron-image>
+                <iron-image src="../Resources/Youtube.png"></iron-image>
+            </div>
 
-    78 East 88th Street, Suite 209 
-    New York, NY, 10221 
-    1-347-567-8670
 
-    info@veronicaroth.com
-    Follow Me
 
+        </div>
+    </iron-grid>
+    <p style="text-align: center">© Veronica Roth 2016 - All rights reserved</p>
 </div>
 <!--FOOTER END-->
 </body>
