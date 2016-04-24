@@ -38,71 +38,84 @@
             background-color: #fac8cd;
             height: 20rem;
         }
-    </style>
-    <style is="custom-style">
-      #example-full-height-container {
-        height: 250px;
-        border: 2px solid #444;
-        background: #444;
-      }
 
-      #example-full-height-container iron-image{
-        background: #ddd;
-      }
+        #example-full-height-container {
+            height: 250px;
+            border: 2px solid #444;
+            background: #444;
+        }
 
-      #example-full-height {
-        height: 100%;
-        --iron-image-height: 100%;
-      }
+        #example-full-height-container iron-image{
+            background: #ddd;
+        }
 
-      #example-half-height {
-        height: 50%;
-        --iron-image-height: 100%;
-      }
-    </style>
-    <style is="custom-style">
-      #example-full-height-container2 {
-        height: 250px;
-        border: 2px solid #444;
-        background: #444;
-      }
+        #example-full-height {
+            height: 100%;
+            --iron-image-height: 100%;
+        }
 
-      #example-full-height-container2 iron-image{
-        background: #ddd;
-      }
+        #example-half-height {
+            height: 50%;
+            --iron-image-height: 100%;
+        }
 
-      #example-full-height2 {
-        height: 100%;
-        --iron-image-height: 100%;
-      }
+        #example-full-height-container2 {
+            height: 250px;
+            border: 2px solid #444;
+            background: #444;
+        }
 
-      #example-half-height2 {
-        height: 50%;
-        --iron-image-height: 100%;
-      }
+        #example-full-height-container2 iron-image{
+            background: #ddd;
+        }
 
-      .books-container{
-          background-color: #bbbbbb;
-          padding: 3rem;
+        #example-full-height2 {
+            height: 100%;
+            --iron-image-height: 100%;
+        }
 
-      }
+        #example-half-height2 {
+            height: 50%;
+            --iron-image-height: 100%;
+        }
 
-      .footer{
-          background-color: #232222;
-          padding-right: 4rem;
-          padding-left: 16rem;
-          padding-top: 5rem;
-          padding-bottom: 5rem;
-          color: white;
-          height:250px;
-      }
+        .press-container {
 
-      .footer-text{
-          font-family: Montserrat;
-          font-weight: 600;
-          font-size: 1.3rem;
-          line-height: 1.4;
-      }
+        }
+
+        .press-comentary-container{
+            border: 1px solid black;
+            border-radius: 1%;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: justify;
+            font-family: Roboto;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .books-container{
+            background-color: #bbbbbb;
+            padding: 3rem;
+
+        }
+
+        .footer{
+            background-color: #232222;
+            padding-right: 4rem;
+            padding-left: 16rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            color: white;
+            height:250px;
+        }
+
+        .footer-text{
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
 
     </style>
     <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
@@ -110,48 +123,55 @@
 </head>
 <body class="fullbleed layout vertical">
 <div>
-<paper-header-panel class="flex">
-         <paper-toolbar class="black">
-             <div class="title">
-                 <iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image>
-             </div>
-             <paper-button>About</paper-button>
-             <paper-button>The Saga</paper-button>
-             <paper-button>Books</paper-button>
+    <paper-header-panel class="flex">
+        <paper-toolbar class="black">
+            <div class="title">
+                <iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image>
+            </div>
+            <paper-button>About</paper-button>
+            <paper-button>The Saga</paper-button>
+            <paper-button>Books</paper-button>
             <paper-button class="signUp" raised>Sign up</paper-button>
         </paper-toolbar>
     </paper-header-panel>
 </div>
 <!--BOOK DETAIL START-->
 <div class="layout horizontal book-detail">
-<div>
-    <div id="example-full-height-container2">
-        <iron-image id="example-full-height2" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
+    <div>
+        <div id="example-full-height-container2">
+            <iron-image id="example-full-height2" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
+        </div>
     </div>
-</div>
-<div class="flex">
-    <h2>DIVERGENT</h2>
-    <h3> $199 </h3>
-</div>
-<div >
-    <h2>AVAILABLE</h2>
-</div>
+    <div class="flex">
+        <h2>DIVERGENT</h2>
+        <h3> $199 </h3>
+    </div>
+    <div >
+        <h2>AVAILABLE</h2>
+    </div>
 </div>
 <!--BOOK DETAIL END-->
 <!--COMMENTS START-->
-<div class="horizontal center-justified layout">
-  <div><h2>The press says</h2></div>
+<div class="press-container">
+    <div class="horizontal center-justified layout">
+        <div><h2>The press says</h2></div>
+    </div>
+    <div class="press-comentary-container">
+        <h3 style="font-size: 1.5rem; margin: 0">New York Times Review</h3>
+        <h4 style="font-weight: 400;font-size: 1.4rem">In This Dystopia, Teens Must Choose Wisely - By SUSAN DOMINUS MAY 12, 2011</h4>
+        <p>Imagine the publishing world as it might look in a dystopian universe in the distant future. In this world, college English majors — call them “Englies” — aspire to write only one kind of book: the dystopian young adult novel set in the distant future. (Englies of a certain status are permitted to write about dystopias populated by vampires.) Another subset of the population — “the Fans” — provides a kind of slave labor, posting endlessly to dedicated blogs and recording podcasts, providing free marketing for an unceasing succession of aspiring best-seller trilogies. ....</p>
+        <p style="text-decoration: underline">Read the entire review</p>
+    </div>
 </div>
-
 <div class="horizontal center-justified layout">
-  <div><h2>The readers say</h2></div>
+    <div><h2>The readers say</h2></div>
 </div>
 <!--COMMENTS END-->
 <!--RELATED BOOK START-->
 <div class="related-books">
-<div class="horizontal center-justified layout">
-  <div><h2>Other products of the author</h2></div>
-</div>
+    <div class="horizontal center-justified layout">
+        <div><h2>Other products of the author</h2></div>
+    </div>
     <div class="books-container">
         <iron-grid>
             <div class="m4 s12"><book-card
