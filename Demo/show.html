@@ -13,7 +13,9 @@
     <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+    <link rel="import" href="../bower_components/paper-input/paper-textarea.html">
     <link rel="import" href="../my_components/book-card.html">
+
 
     <style is="custom-style">
         paper-toolbar.black {
@@ -79,11 +81,18 @@
             --iron-image-height: 100%;
         }
 
-        .press-container {
 
+
+        .button-send{
+            background-color: #0b132b;
+            color: white;
+            margin-right: auto;
+            margin-left: auto;
+            width: 300px;
+            display: block;
         }
 
-        .press-comentary-container{
+        .commentary-container{
             border: 1px solid black;
             border-radius: 1%;
             margin: 1rem;
@@ -98,6 +107,13 @@
             background-color: #bbbbbb;
             padding: 3rem;
 
+        }
+
+        .commentary-container{
+        }
+        
+        .comment-form{
+            margin: 2rem;
         }
 
         .footer{
@@ -152,19 +168,28 @@
 </div>
 <!--BOOK DETAIL END-->
 <!--COMMENTS START-->
-<div class="press-container">
-    <div class="horizontal center-justified layout">
-        <div><h2>The press says</h2></div>
-    </div>
-    <div class="press-comentary-container">
-        <h3 style="font-size: 1.5rem; margin: 0">New York Times Review</h3>
-        <h4 style="font-weight: 400;font-size: 1.4rem">In This Dystopia, Teens Must Choose Wisely - By SUSAN DOMINUS MAY 12, 2011</h4>
-        <p>Imagine the publishing world as it might look in a dystopian universe in the distant future. In this world, college English majors — call them “Englies” — aspire to write only one kind of book: the dystopian young adult novel set in the distant future. (Englies of a certain status are permitted to write about dystopias populated by vampires.) Another subset of the population — “the Fans” — provides a kind of slave labor, posting endlessly to dedicated blogs and recording podcasts, providing free marketing for an unceasing succession of aspiring best-seller trilogies. ....</p>
-        <p style="text-decoration: underline">Read the entire review</p>
-    </div>
+
+<div class="horizontal center-justified layout">
+    <div><h2>The press says</h2></div>
 </div>
+<div class="commentary-container">
+    <h3 style="font-size: 1.5rem; margin: 0">New York Times Review</h3>
+    <h4 style="font-weight: 400;font-size: 1.4rem">In This Dystopia, Teens Must Choose Wisely - By SUSAN DOMINUS MAY 12, 2011</h4>
+    <p>Imagine the publishing world as it might look in a dystopian universe in the distant future. In this world, college English majors — call them “Englies” — aspire to write only one kind of book: the dystopian young adult novel set in the distant future. (Englies of a certain status are permitted to write about dystopias populated by vampires.) Another subset of the population — “the Fans” — provides a kind of slave labor, posting endlessly to dedicated blogs and recording podcasts, providing free marketing for an unceasing succession of aspiring best-seller trilogies. ....</p>
+    <p style="text-decoration: underline">Read the entire review</p>
+</div>
+
 <div class="horizontal center-justified layout">
     <div><h2>The readers say</h2></div>
+
+</div>
+<div class="commentary-container">
+
+    <div class="comment-form">
+        <h4>Leave your rating and review</h4>
+        <paper-textarea label="Your review"></paper-textarea>
+        <paper-button class="button-send" style="background-color: #0b132b">Send</paper-button>
+    </div>
 </div>
 <!--COMMENTS END-->
 <!--RELATED BOOK START-->
