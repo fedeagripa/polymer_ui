@@ -15,6 +15,7 @@
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
     <link rel="import" href="../bower_components/paper-input/paper-textarea.html">
     <link rel="import" href="../my_components/book-card.html">
+    <link rel="import" href="../my_components/comment-card.html">
 
 
     <style is="custom-style">
@@ -27,8 +28,7 @@
             background: #2faded;
             --paper-button-ink-color: #1817ed;
         }
-    </style>
-    <style is="custom-style">
+
         .related-books{
             background-color: #bbb;
         }
@@ -184,7 +184,11 @@
 
 </div>
 <div class="commentary-container">
-
+    <comment-card
+            comment='{"name": "Maria Gonzalez", "date": "April 14, 2016", "text":"I loved the book! The story is very interesting."}'></comment-card>
+    <comment-card
+            comment='{"name": "Juan Perez", "date": "March 25, 2016",
+            "text":"I am going to write this, not as a separate review for each book, but instead as a collective.  I read the first two books over a year ago and reread them before reading the final book in the trilogy.  I feel that I don’t need to separate the books because they truly tell just one long story.  It is the story of a girl named Tris."}'></comment-card>
     <div class="comment-form">
         <h4>Leave your rating and review</h4>
         <paper-textarea label="Your review"></paper-textarea>
