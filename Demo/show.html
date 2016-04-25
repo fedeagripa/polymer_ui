@@ -65,6 +65,7 @@
             height: 250px;
             border: 2px solid #444;
             background: #444;
+            margin-top:1rem;
         }
 
         #example-full-height-container2 iron-image{
@@ -140,6 +141,13 @@
             font-weight: 300;
         }
 
+        .available{
+            width: 100%;
+            text-align: right;
+            color:#5fc90a;
+            text-decoration: underline;
+        }
+
     </style>
     <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
 
@@ -169,7 +177,7 @@
     <div class="xs10">
         <div class="xs12">
             <div class="xs6"><h1 style="margin:1rem">DIVERGENT</h1></div>
-            <div class="xs6" ><h2 align:"right" style="margin-bottom:1rem">AVAILABLE</h2></div>
+            <div class="xs6" ><h2 class="available" style="margin-bottom:1rem">AVAILABLE</h2></div>
             <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">$199</h1></div>
             <div class="xs12" style="margin-left:1rem"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
         </div>
