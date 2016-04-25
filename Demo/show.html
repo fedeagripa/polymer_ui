@@ -62,27 +62,9 @@
             --iron-image-height: 100%;
         }
 
-        #example-full-height-container2 {
-            height: 250px;
-            border: 2px solid #444;
-            background: #444;
-            margin-top:1rem;
+        #heightBook-image {
+            --iron-image-width: 100%;
         }
-
-        #example-full-height-container2 iron-image{
-            background: #ddd;
-        }
-
-        #example-full-height2 {
-            height: 100%;
-            --iron-image-height: 100%;
-        }
-
-        #example-half-height2 {
-            height: 50%;
-            --iron-image-height: 100%;
-        }
-
 
 
         .button-send{
@@ -170,15 +152,13 @@
 <!--BOOK DETAIL START-->
 <div class="layout horizontal book-detail" style="min-height:">
     <iron-grid>
-    <div class="xs2">
-        <div id="example-full-height-container2">
-            <iron-image id="example-full-height2" alt="The Polymer logo." src="../Resources/book1.jpg"></iron-image>
-        </div>
+    <div class="xs12 s12 m2">
+        <iron-image id="heightBook-image" alt="The book" src="../Resources/book1.jpg"></iron-image>
     </div>
-    <div class="xs10">
+    <div class="xs12 s12 m10">
         <div class="xs12">
-            <div class="xs6"><h1 style="margin:1rem">DIVERGENT</h1></div>
-            <div class="xs6" ><h2 class="available" style="margin-bottom:1rem">AVAILABLE</h2></div>
+            <div class="xs12 s12 m6"><h1 style="margin:1rem">DIVERGENT</h1></div>
+            <div class="xs12 s12 m6" ><h2 class="available" style="margin-bottom:1rem">AVAILABLE</h2></div>
             <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">$199</h1></div>
             <div class="xs12" style="margin-left:1rem"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
         </div>
@@ -227,7 +207,7 @@
     <div class="comment-form">
         <h4>Leave your rating and review</h4>
         <paper-textarea label="Your review"></paper-textarea>
-        <paper-button class="button-send" style="background-color: #0b132b">Send</paper-button>
+        <paper-button class="button-send" id="btnSend" style="background-color: #0b132b">Send</paper-button>
     </div>
 </div>
 <!--COMMENTS END-->
@@ -272,9 +252,6 @@
                 <iron-image src="../Resources/Facebook.png"></iron-image>
                 <iron-image src="../Resources/Youtube.png"></iron-image>
             </div>
-
-
-
         </div>
     </iron-grid>
     <p style="text-align: center">© Veronica Roth 2016 - All rights reserved</p>
@@ -283,6 +260,10 @@
 <script type="text/javascript">
     var app = document.querySelector('#app')
     app.stringify = function(val){return JSON.stringify(val)}
+
+    var func = getElementById('btnSend').click({
+        response.push("{'name': 'user1', 'date': '2015-05-05', 'text':'someText'}");
+    });
 </script>
 </body>
 </html>
