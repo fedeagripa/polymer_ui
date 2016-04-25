@@ -39,7 +39,6 @@
         }
         .book-detail{
             background-color: #fac8cd;
-            height: 20rem;
         }
 
         #example-full-height-container {
@@ -134,6 +133,13 @@
             line-height: 1.4;
         }
 
+        .book-spec{
+            text-align: justify;
+            font-family: Roboto;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
     </style>
     <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
 
@@ -153,7 +159,7 @@
     </paper-header-panel>
 </div>
 <!--BOOK DETAIL START-->
-<div class="layout horizontal book-detail">
+<div class="layout horizontal book-detail" style="min-height:">
     <iron-grid>
     <div class="m2">
         <div id="example-full-height-container2">
@@ -162,14 +168,17 @@
     </div>
     <div class="xs10">
         <div class="xs12">
-            <div class="xs6"><h2>DIVERGENT</h2></div>
-            <div class="xs6" ><h2>AVAILABLE</h2></div>
-            <div class="xs12" ><span>$199</span></div>
-            <div class="xs12"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
+            <div class="xs6"><h1 style="margin:1rem">DIVERGENT</h1></div>
+            <div class="xs6" ><h2 align:"right" style="margin-bottom:1rem">AVAILABLE</h2></div>
+            <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">$199</h1></div>
+            <div class="xs12" style="margin-left:1rem"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
         </div>
-        <div class="xs12">
+        <div class="xs12 book-spec">
              <p>In Beatrice Prior’s dystopian Chicago world, society is divided into five factions, each dedicated to the cultivation of a particular virtue—Candor (the honest), Abnegation (the selfless), Dauntless (the brave), Amity (the peaceful), and Erudite (the intelligent). On an appointed day of every year, all sixteen-year-olds must select the faction to which they will devote the rest of their lives. For Beatrice, the decision is between staying with her family and being who she really is—she can’t have both. So she makes a choice that surprises everyone, including herself.
-                During the highly competitive initiation that follows, Beatrice renames herself Tris and struggles alongside her fellow initiates to live out the choice they have made. Together they must undergo extreme physical tests of endurance and intense psychological simulations, some with devastating consequences. As initiation transforms them all, Tris must determine who her friends really are—and where, exactly, a romance with a sometimes fascinating, sometimes exasperating boy fits into the life she's chosen. But Tris also has a secret, one she's kept hidden from everyone because she's been warned it can mean death. And as she discovers unrest and growing conflict that threaten to unravel her seemingly perfect society, she also learns that her secret might help her save those she loves . . . or it might destroy her.</p>
+             </p>
+             <p>
+                During the highly competitive initiation that follows, Beatrice renames herself Tris and struggles alongside her fellow initiates to live out the choice they have made. Together they must undergo extreme physical tests of endurance and intense psychological simulations, some with devastating consequences. As initiation transforms them all, Tris must determine who her friends really are—and where, exactly, a romance with a sometimes fascinating, sometimes exasperating boy fits into the life she's chosen. But Tris also has a secret, one she's kept hidden from everyone because she's been warned it can mean death. And as she discovers unrest and growing conflict that threaten to unravel her seemingly perfect society, she also learns that her secret might help her save those she loves . . . or it might destroy her.
+            </p>
         </div>
     </div>
 </iron-grid>
