@@ -10,14 +10,12 @@
     <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
 
-    <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+    <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
-    <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
     <link rel="import" href="../bower_components/paper-input/paper-textarea.html">
     <link rel="import" href="../my_components/book-card.html">
-    <link rel="import" href="../my_components/comment-card.html">
-    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+    <link rel="import" href="../my_components/comment-section.html">
 
 
     <style is="custom-style">
@@ -66,16 +64,6 @@
             --iron-image-width: 100%;
         }
 
-
-        .button-send{
-            background-color: #0b132b;
-            color: white;
-            margin-right: auto;
-            margin-left: auto;
-            width: 50%;
-            display: block;
-        }
-
         .commentary-container{
             border: 1px solid black;
             border-radius: 1%;
@@ -94,10 +82,6 @@
         }
 
         .commentary-container{
-        }
-        
-        .comment-form{
-            margin: 2rem;
         }
 
         .footer{
@@ -190,25 +174,7 @@
 
 </div>
 <div class="commentary-container">
-    <template is="dom-bind" id="app">
-        <iron-ajax
-            auto
-            url="api/comments.json"
-            params=""
-            handle-as="json"
-            last-response="{{response}}"
-            debounce-duration="300">
-        </iron-ajax>
-        <template is="dom-repeat" items="[[ response ]]">
-            <comment-card
-                comment='[[item]]'></comment-card>
-        </template>
-    </template>
-    <div class="comment-form">
-        <h4>Leave your rating and review</h4>
-        <paper-textarea label="Your review"></paper-textarea>
-        <paper-button class="button-send" id="btnSend" style="background-color: #0b132b">Send</paper-button>
-    </div>
+    <comment-section></comment-section>
 </div>
 <!--COMMENTS END-->
 <!--RELATED BOOK START-->
@@ -257,13 +223,5 @@
     <p style="text-align: center">© Veronica Roth 2016 - All rights reserved</p>
 </div>
 <!--FOOTER END-->
-<script type="text/javascript">
-    var app = document.querySelector('#app')
-    app.stringify = function(val){return JSON.stringify(val)}
-
-    var func = getElementById('btnSend').click({
-        response.push("{'name': 'user1', 'date': '2015-05-05', 'text':'someText'}");
-    });
-</script>
 </body>
 </html>

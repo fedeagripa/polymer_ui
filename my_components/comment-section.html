@@ -1,0 +1,67 @@
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../my_components/comment-card.html">
+<dom-module id="comment-section">
+    <style>
+        #separation-bar{
+            loat: none;
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: rgba(107,106,106,0.66);
+        }
+
+        .comment-form{
+            margin: 2rem;
+        }
+        .button-send{
+            background-color: #0b132b;
+            color: white;
+            margin-right: auto;
+            margin-left: auto;
+            width: 50%;
+            display: block;
+        }
+    </style>
+    <template>
+        <iron-ajax
+            auto
+            url="../Demo/api/comments.json"
+            params=""
+            handle-as="json"
+            last-response="{{_commentArray}}"
+            debounce-duration="300">
+        </iron-ajax>
+        <template is="dom-repeat" items="[[ _commentArray ]]">
+            <comment-card
+                comment='[[item]]'></comment-card>
+        </template>
+        <div class="comment-form">
+            <h4>Leave your rating and review</h4>
+            <paper-textarea label="Your review">{{item.text}}</paper-textarea>
+            <paper-button class="button-send" id="btnSend" style="background-color: #0b132b">Send</paper-button>
+        </div>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is: 'comment-section',
+        properties:{
+            _commentArray:{
+                type: Array,
+                value: function() {
+                    return[];
+                }
+            }
+        },
+        listeners:{
+            'btnSend.tap':'_addComment'
+        },
+        _addComment:function(e){
+            this.push('_commentArray',{name: "someName", date:"25 March 2016", text: 'Im some new cool comment'})
+        }
+    });
+</script>
