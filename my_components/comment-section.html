@@ -41,7 +41,7 @@
         </template>
         <div class="comment-form">
             <h4>Leave your rating and review</h4>
-            <paper-textarea label="Your review">{{item.text}}</paper-textarea>
+            <paper-textarea label="Your review" id="textComment" value="{{itemText::input}}"></paper-textarea>
             <paper-button class="button-send" id="btnSend" style="background-color: #0b132b">Send</paper-button>
         </div>
     </template>
@@ -61,7 +61,9 @@
             'btnSend.tap':'_addComment'
         },
         _addComment:function(e){
-            this.push('_commentArray',{name: "someName", date:"25 March 2016", text: 'Im some new cool comment'})
+            var comm = this.$.textComment;
+            this.push('_commentArray',{name: "someName", date:"25 March 2016", text: comm.value});
+            this.$.textComment.value= '';
         }
     });
 </script>
