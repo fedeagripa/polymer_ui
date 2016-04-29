@@ -13,6 +13,7 @@
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
     <link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
     <link rel="import" href="../my_components/book-card.html">
+    <link rel="import" href="../my_components/page-header.html">
 
     <style is="custom-style">
         paper-toolbar.black {
@@ -23,38 +24,6 @@
         {
             background: #2faded;
             --paper-button-ink-color: #1817ed;
-        }
-
-        .banner-header{
-            font-family: Helvetica;
-            text-align: center;
-            color: white;
-            position: absolute;
-            top: 20%;
-            left: 0;
-            right: 0;
-            font-size: 3.5rem;
-            letter-spacing: .6px;
-        }
-
-        .banner-subtitle{
-            font-family: Roboto;
-            text-align: center;
-            color: white;
-            position: absolute;
-            top: 45%;
-            left: 0;
-            right: 0;
-            font-size: 2rem;
-            letter-spacing: .6px;
-        }
-
-        .banner-container {
-            background-image: url("../Resources/banner.jpeg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            height: 20.38rem;
         }
 
         .information-container{
@@ -113,96 +82,96 @@
 
 
 </head>
-    <body class="fullbleed layout vertical">
-     <paper-header-panel class="flex">
-         <paper-toolbar class="black">
-             <div class="title">
-                 <iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image>
-             </div>
-             <paper-button>About</paper-button>
-             <paper-button>The Saga</paper-button>
-             <paper-button>Books</paper-button>
-            <paper-button class="signUp" raised>Sign up</paper-button>
-        </paper-toolbar>
-    </paper-header-panel>
-     <div class="banner-container">
-         <h1 class="banner-header">VERONICA ROTH</h1>
-         <h2 class="banner-subtitle">#1 New York Times bestselling author of Divergent</h2>
-     </div>
-     <div class="information-container">
-         <iron-grid>
-            <div class="s6 xs12">
-                <div class="information-paragraph">
-                    <h3 class="information-title">About Veronica</h3>
-                    <p>Veronica Roth was born on August 19, 1988 in New York City, and was raised primarily in Barrington, Illinois.</p>
-                    <p>She is of German and Polish descent. Roth says of her father: "He had a job, and worked far away. Now I have a good relationship with my stepdad". Her maternal grandparents were concentration camp survivors, whose religious convictions pushed her mother away from religion. Veronica Roth learned about Christianity by attending a Christian Bible study during her high school years, and has stayed with it.</p>
-                    <p>Roth graduated from Barrington High School. After attending a year of college at Carleton College, she transferred to Northwestern University for its creative writing program. She married photographer Nelson Fitch in 2011. They reside in the Chicago area.</p>
-                </div>
+<body class="fullbleed layout vertical">
+<paper-header-panel class="flex">
+    <paper-toolbar class="black">
+        <div class="title">
+            <iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image>
+        </div>
+        <paper-button>About</paper-button>
+        <paper-button>The Saga</paper-button>
+        <paper-button>Books</paper-button>
+        <paper-button class="signUp" raised>Sign up</paper-button>
+    </paper-toolbar>
+</paper-header-panel>
+
+<page-header></page-header>
+<div class="information-container">
+    <iron-grid>
+        <div class="s6 xs12">
+            <div class="information-paragraph">
+                <h3 class="information-title">About Veronica</h3>
+                <p>Veronica Roth was born on August 19, 1988 in New York City, and was raised primarily in Barrington, Illinois.</p>
+                <p>She is of German and Polish descent. Roth says of her father: "He had a job, and worked far away. Now I have a good relationship with my stepdad". Her maternal grandparents were concentration camp survivors, whose religious convictions pushed her mother away from religion. Veronica Roth learned about Christianity by attending a Christian Bible study during her high school years, and has stayed with it.</p>
+                <p>Roth graduated from Barrington High School. After attending a year of college at Carleton College, she transferred to Northwestern University for its creative writing program. She married photographer Nelson Fitch in 2011. They reside in the Chicago area.</p>
             </div>
-             <div class="s6 xs12">
-                 <div class="information-paragraph">
-                     <h3 class="information-title">Career</h3>
-                    <p>Veronica Roth is best known for her trilogy of novels: Divergent, Insurgent, and Allegiant; Allegiant was released on October 22, 2013.</p>
-                   <p>She is the recipient of the Goodreads 2011 Choice Award and the Best of 2012 in the category Young Adult Fantasy & Science Fiction and also Best Goodreads Author in 2012. Roth wrote her first book, Divergent, while on winter break in her senior year at Northwestern University. Her career took off rapidly with the success of her first novel, with the publishing rights sold before she graduated from college in 2010 and the film rights sold mid-March 2011, before the novel was printed in April 2011.</p>
-                   <p>Roth sold the film rights to The Divergent Series to Summit Entertainment.</p>
-                 </div>
-             </div>
-         </iron-grid>
-     </div>
-     <div class="saga-container">
-         <iron-grid>
-             <div class="m4 s12 xs12">
-                 <iron-image style="width: 100%; min-height: 400px" sizing="contain" src="../Resources/Divergent-Series.png"></iron-image>
-             </div>
-             <div class="m8 s12 xs12">
-                 <div class="saga-text">
-                     <h3 style="font-size: 2rem">The Divergent Saga</h3>
-                 <p>The Divergent trilogy is a series of young adult science fiction adventure novels by Veronica Roth set in a post-apocalyptic dystopian Chicago. The trilogy consists of Divergent (2011), Insurgent (2012) and Allegiant (2013). </p>
-                 <p>The society of the trilogy defines its citizens by their social and personality-related affiliation with five different factions, which removes the threat of anyone exercising independent will and threatening the population's safety. Beatrice Prior, who later changes her name to Tris, an Abnegation-born and Dauntless transfer, must figure out her life as a Divergent, while concealing her true nature, and living with the danger of being killed if it is discovered by the Erudite and Dauntless leaders.</p>
-                 <p>“We believe in ordinary acts of bravery, in the courage that drives one person to stand up for another.” ― Veronica Roth, Divergent</p>
-                 </div>
-             </div>
-         </iron-grid>
-     </div>
-    <div class="books-container">
-        <iron-grid>
-            <div class="m4 s12 xs12"><book-card
-                    book='{"name": "Divergent", "image": "../Resources/book1.jpg", "price":"$199"}'></book-card></div>
-            <div class="m4 s12 xs12"><book-card
-                    book='{"name": "Insurgent", "image": "../Resources/book2.jpg", "price":"$199"}'></book-card></div>
-            <div class="m4 s12 xs12"><book-card
-                    book='{"name": "Allegiant", "image": "../Resources/book3.jpg", "price":"$199"}'></book-card></div>
-        </iron-grid>
-    </div>
-    <div class="footer">
-        <iron-grid>
-            <div class="s6">
-                <div class="xs12">
+        </div>
+        <div class="s6 xs12">
+            <div class="information-paragraph">
+                <h3 class="information-title">Career</h3>
+                <p>Veronica Roth is best known for her trilogy of novels: Divergent, Insurgent, and Allegiant; Allegiant was released on October 22, 2013.</p>
+                <p>She is the recipient of the Goodreads 2011 Choice Award and the Best of 2012 in the category Young Adult Fantasy & Science Fiction and also Best Goodreads Author in 2012. Roth wrote her first book, Divergent, while on winter break in her senior year at Northwestern University. Her career took off rapidly with the success of her first novel, with the publishing rights sold before she graduated from college in 2010 and the film rights sold mid-March 2011, before the novel was printed in April 2011.</p>
+                <p>Roth sold the film rights to The Divergent Series to Summit Entertainment.</p>
+            </div>
+        </div>
+    </iron-grid>
+</div>
+<div class="saga-container">
+    <iron-grid>
+        <div class="m4 s12 xs12">
+            <iron-image style="width: 100%; min-height: 400px" sizing="contain" src="../Resources/Divergent-Series.png"></iron-image>
+        </div>
+        <div class="m8 s12 xs12">
+            <div class="saga-text">
+                <h3 style="font-size: 2rem">The Divergent Saga</h3>
+                <p>The Divergent trilogy is a series of young adult science fiction adventure novels by Veronica Roth set in a post-apocalyptic dystopian Chicago. The trilogy consists of Divergent (2011), Insurgent (2012) and Allegiant (2013). </p>
+                <p>The society of the trilogy defines its citizens by their social and personality-related affiliation with five different factions, which removes the threat of anyone exercising independent will and threatening the population's safety. Beatrice Prior, who later changes her name to Tris, an Abnegation-born and Dauntless transfer, must figure out her life as a Divergent, while concealing her true nature, and living with the danger of being killed if it is discovered by the Erudite and Dauntless leaders.</p>
+                <p>“We believe in ordinary acts of bravery, in the courage that drives one person to stand up for another.” ― Veronica Roth, Divergent</p>
+            </div>
+        </div>
+    </iron-grid>
+</div>
+<div class="books-container">
+    <iron-grid>
+        <div class="m4 s12 xs12"><book-card
+                book='{"name": "Divergent", "image": "../Resources/book1.jpg", "price":"$199"}'></book-card></div>
+        <div class="m4 s12 xs12"><book-card
+                book='{"name": "Insurgent", "image": "../Resources/book2.jpg", "price":"$199"}'></book-card></div>
+        <div class="m4 s12 xs12"><book-card
+                book='{"name": "Allegiant", "image": "../Resources/book3.jpg", "price":"$199"}'></book-card></div>
+    </iron-grid>
+</div>
+<div class="footer">
+    <iron-grid>
+        <div class="s6">
+            <div class="xs12">
                 <h3 class="footer-text">Contact</h3>
-                </div>
-                <div class="xs12">
+            </div>
+            <div class="xs12">
                 <br>78 East 88th Street, Suite 209</br>
                 <br>New York, NY, 10221</br>
                 <br>1-347-567-8670</br>
                 <br>
                 <br>info@veronicaroth.com</br>
-                </div>
             </div>
-            <div class="s6" style="display: block">
-                <div class="xs12">
-                    <h3 class="footer-text">Follow Me</h3>
-                </div>
-                <div class="xs12">
-                    <iron-image src="../Resources/Twitter.png"></iron-image>
-                    <iron-image src="../Resources/Facebook.png"></iron-image>
-                    <iron-image src="../Resources/Youtube.png"></iron-image>
-                </div>
-
-
-
+        </div>
+        <div class="s6" style="display: block">
+            <div class="xs12">
+                <h3 class="footer-text">Follow Me</h3>
             </div>
-        </iron-grid>
-        <p style="text-align: center">© Veronica Roth 2016 - All rights reserved</p>
-    </div>
-    </body>
+            <div class="xs12">
+                <iron-image src="../Resources/Twitter.png"></iron-image>
+                <iron-image src="../Resources/Facebook.png"></iron-image>
+                <iron-image src="../Resources/Youtube.png"></iron-image>
+            </div>
+
+
+
+        </div>
+    </iron-grid>
+    <p style="text-align: center">© Veronica Roth 2016 - All rights reserved</p>
+</div>
+
+</body>
+
 </html>

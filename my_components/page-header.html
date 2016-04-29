@@ -1,0 +1,99 @@
+a<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!--
+A responsive comment card element
+
+Example:
+
+    <comment-card></comment-card>
+
+@demo
+-->
+<link rel="import" href="../iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+
+<dom-module id="page-header">
+    <style>
+        .banner-header{
+            font-family: Helvetica;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 0;
+            right: 0;
+            font-size: 3.5rem;
+            letter-spacing: .6px;
+        }
+
+        .banner-header.small{
+            font-size: 2rem;
+        }
+
+        .banner-subtitle{
+            font-family: Roboto;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 45%;
+            left: 0;
+            right: 0;
+            font-size: 2rem;
+            letter-spacing: .6px;
+        }
+        .banner-container {
+            background-image: url("../Resources/banner.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 20.38rem;
+        }
+
+    </style>
+    <template>
+        <iron-media-query query="(max-width: 600px)" query-matches="{{_tooSmallChanged}}"></iron-media-query>
+        <div class="banner-container">
+            <h1 id="bannerHeader" class="banner-header">[[banner.header1]]</h1>
+            <h2 class="banner-subtitle">[[banner.header2]]</h2>
+        </div>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is: 'page-header',
+        properties:{
+            banner:{
+                type: Object,
+                value: function() {
+                    return {
+                        header1: 'DefaultHeader',
+                        header2: 'DefaultHeader',
+                    };
+                }
+            },
+            mediaQuery: {
+                type: String,
+                value: function() {
+                    return "(max-width: 320px)";
+                }
+            },
+            tooSmall: {
+                type: Boolean,
+                observer: '_tooSmallChanged'
+            }
+
+        },
+        _tooSmallChanged: function(newValue, oldValue) {
+            this.toggleClass('small', newValue);
+        },
+    });
+</script>
