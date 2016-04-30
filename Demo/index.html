@@ -10,6 +10,9 @@
     <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
     <link rel="import" href="../bower_components/iron-image/iron-image.html">
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
+    <link rel="import" href="../bower_components/paper-menu/paper-menu.html">
+    <link rel="import" href="../bower_components/paper-menu-button/paper-menu-button.html">
+    <link rel="import" href="../bower_components/paper-item/paper-item.html">
     <link rel="import" href="../bower_components/iron-grid/iron-grid.html">
     <link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
     <link rel="import" href="../my_components/book-card.html">
@@ -94,10 +97,15 @@
         <div class="title">
             <iron-image src="../Resources/logo.png" style="width:50px; height:50px;" sizing="cover"></iron-image>
         </div>
-        <paper-button>About</paper-button>
-        <paper-button>The Saga</paper-button>
-        <paper-button>Books</paper-button>
-        <paper-button class="signUp" raised>Sign up</paper-button>
+        <paper-menu-button>
+            <paper-icon-button icon="menu" class="dropdown-trigger"></paper-icon-button>
+            <paper-menu class="dropdown-content">
+                <paper-item>About</paper-item>
+                <paper-item>The Saga</paper-item>
+                <paper-item>Books</paper-item>
+                <paper-item>Sign up</paper-item>
+            </paper-menu>
+        </paper-menu-button>
     </paper-toolbar>
 </paper-header-panel>
 

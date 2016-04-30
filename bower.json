@@ -23,6 +23,9 @@
     "iron-grid": "*",
     "iron-media-query": "PolymerElements/iron-media-query#^1.0.8",
     "paper-input": "PolymerElements/paper-input#^1.1.11",
-    "iron-ajax": "PolymerElements/iron-ajax#^1.2.0"
+    "iron-ajax": "PolymerElements/iron-ajax#^1.2.0",
+    "paper-menu-button": "PolymerElements/paper-menu-button#^1.1.0",
+    "paper-menu": "PolymerElements/paper-menu#^1.2.2",
+    "paper-item": "PolymerElements/paper-item#^1.2.1"
   }
 }
