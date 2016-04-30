@@ -36,6 +36,7 @@ Example:
         }
 
         .banner-header.small{
+            top: 30%;
             font-size: 2rem;
         }
 
@@ -50,6 +51,10 @@ Example:
             font-size: 2rem;
             letter-spacing: .6px;
         }
+
+        .banner-subtitle.small{
+            font-size: 1.5rem;
+        }
         .banner-container {
             background-image: url("../Resources/banner.jpeg");
             background-repeat: no-repeat;
@@ -60,10 +65,10 @@ Example:
 
     </style>
     <template>
-        <iron-media-query query="(max-width: 600px)" query-matches="{{_tooSmallChanged}}"></iron-media-query>
+        <iron-media-query query="[[mediaQuery]]" query-matches="{{tooSmall}}"></iron-media-query>
         <div class="banner-container">
-            <h1 id="bannerHeader" class="banner-header">[[banner.header1]]</h1>
-            <h2 class="banner-subtitle">[[banner.header2]]</h2>
+            <h1 id="header1" class="banner-header">[[banner.header1]]</h1>
+            <h2 id="header2" class="banner-subtitle">[[banner.header2]]</h2>
         </div>
     </template>
 </dom-module>
@@ -83,7 +88,7 @@ Example:
             mediaQuery: {
                 type: String,
                 value: function() {
-                    return "(max-width: 320px)";
+                    return "(max-width: 700px)";
                 }
             },
             tooSmall: {
@@ -93,7 +98,8 @@ Example:
 
         },
         _tooSmallChanged: function(newValue, oldValue) {
-            this.toggleClass('small', newValue);
+            this.toggleClass('small', newValue,this.$.header1);
+            this.toggleClass('small', newValue,this.$.header2);
         },
     });
 </script>
