@@ -4,6 +4,7 @@
 <link rel="import" href="../my_components/comment-card.html">
 <link rel="import" href="../my_components/comment-section.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 
 <dom-module id="bookDetail-section">
     <style>
@@ -57,6 +58,14 @@
     </style>
     <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
     <template>
+        <iron-ajax
+                auto
+                url="../Demo/api/[[_bookId]]/book.json"
+                params=""
+                handle-as="json"
+                last-response="{{_bookArray}}"
+                debounce-duration="300">
+        </iron-ajax>
         <!--BOOK DETAIL START-->
         <div class="layout horizontal book-detail" style="min-height:">
             <iron-grid>
@@ -124,6 +133,20 @@
 <script>
     Polymer({
         is: 'bookDetail-section',
+        properties:{
+            _bookArray: {
+                type: Array,
+                value: function() {
+                    return [];
+                }
+            },
+            _bookId: {
+                type: Number,
+                value: function() {
+                    return 1;
+                }
+            }
+        }
 
     });
 </script>
