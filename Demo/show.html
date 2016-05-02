@@ -78,6 +78,8 @@
         </paper-toolbar>
     </paper-header-panel>
 </div>
+
+
 <bookDetail-section></bookDetail-section>
 
 
@@ -113,5 +115,9 @@
     </iron-grid>   
 </div>
 <!--FOOTER END-->
+<script>
+    var bookId = window.location.search.split('?')[1];
+    document.querySelector('bookDetail-section').bookId = bookId;
+</script>
 </body>
 </html>

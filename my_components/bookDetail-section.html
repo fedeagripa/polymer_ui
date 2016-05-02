@@ -1,10 +1,13 @@
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-input/paper-textarea.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../bower_components/carbon-route/carbon-route.html">
+<link rel="import" href="../bower_components/carbon-route/carbon-location.html">
 <link rel="import" href="../my_components/comment-card.html">
 <link rel="import" href="../my_components/comment-section.html">
+<link rel="import" href="../my_components/book-card.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
-<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
 
 <dom-module id="bookDetail-section">
     <style>
@@ -58,33 +61,34 @@
     </style>
     <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
     <template>
+
         <iron-ajax
                 auto
-                url="../Demo/api/[[_bookId]]/book.json"
+                url="../Demo/api/[[bookId]]/book.json"
                 params=""
                 handle-as="json"
-                last-response="{{_bookArray}}"
+                last-response="{{_book}}"
                 debounce-duration="300">
         </iron-ajax>
+
         <!--BOOK DETAIL START-->
-        <div class="layout horizontal book-detail" style="min-height:">
+        <div class="layout horizontal book-detail">
             <iron-grid>
                 <div class="xs12 s12 m2">
-                    <iron-image id="heightBook-image" alt="The book" src="../Resources/book1.jpg"></iron-image>
+                    <template is="dom-if" if="[[_book]]">
+                    <iron-image id="heightBook-image" alt="The book" src="[[_book.image]]"></iron-image>
+                    </template>
                 </div>
                 <div class="xs12 s12 m10">
                     <div class="xs12">
-                        <div class="xs12 s12 m6"><h1 style="margin:1rem">DIVERGENT</h1></div>
+                        <div class="xs12 s12 m6"><h1 style="margin:1rem">[[_book.title]]</h1></div>
                         <div class="xs12 s12 m6" ><h2 class="available" style="margin-bottom:1rem">AVAILABLE</h2></div>
-                        <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">$199</h1></div>
+                        <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">[[_book.price]]</h1></div>
                         <div class="xs12" style="margin-left:1rem"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
                     </div>
                     <div class="xs12 book-spec">
-                        <p>In Beatrice Prior’s dystopian Chicago world, society is divided into five factions, each dedicated to the cultivation of a particular virtue—Candor (the honest), Abnegation (the selfless), Dauntless (the brave), Amity (the peaceful), and Erudite (the intelligent). On an appointed day of every year, all sixteen-year-olds must select the faction to which they will devote the rest of their lives. For Beatrice, the decision is between staying with her family and being who she really is—she can’t have both. So she makes a choice that surprises everyone, including herself.
-                        </p>
-                        <p>
-                            During the highly competitive initiation that follows, Beatrice renames herself Tris and struggles alongside her fellow initiates to live out the choice they have made. Together they must undergo extreme physical tests of endurance and intense psychological simulations, some with devastating consequences. As initiation transforms them all, Tris must determine who her friends really are—and where, exactly, a romance with a sometimes fascinating, sometimes exasperating boy fits into the life she's chosen. But Tris also has a secret, one she's kept hidden from everyone because she's been warned it can mean death. And as she discovers unrest and growing conflict that threaten to unravel her seemingly perfect society, she also learns that her secret might help her save those she loves . . . or it might destroy her.
-                        </p>
+                        <p>[[_book.desc1]]</p>
+                        <p>[[_book.desc2]]</p>
                     </div>
                 </div>
             </iron-grid>
@@ -116,19 +120,28 @@
             <div class="horizontal center-justified layout">
                 <div><h2>Other products of the author</h2></div>
             </div>
+            <iron-ajax
+                    auto
+                    url="../Demo/api/book.json"
+                    params=""
+                    handle-as="json"
+                    last-response="{{_bookArray}}"
+                    debounce-duration="300">
+            </iron-ajax>
             <div class="books-container">
                 <iron-grid>
-                    <div class="m4 s6 xs12"><book-card
-                            book='{"name": "Divergent", "image": "../Resources/book1.jpg", "price":"$199"}'></book-card></div>
-                    <div class="m4 s6 xs12"><book-card
-                            book='{"name": "Insurgent", "image": "../Resources/book2.jpg", "price":"$199"}'></book-card></div>
-                    <div class="m4 s6 xs12"><book-card
-                            book='{"name": "Allegiant", "image": "../Resources/book3.jpg", "price":"$199"}'></book-card></div>
+                    <template is="dom-repeat" items="[[ _bookArray ]]">
+                        <div class="m4 s6 xs12">
+                           <book-card
+                                    book='[[item.spec]]'></book-card></div>
+                    </template>
                 </iron-grid>
             </div>
         </div>
         <!--RELATED BOOK END-->
+
     </template>
+
 </dom-module>
 <script>
     Polymer({
@@ -140,13 +153,9 @@
                     return [];
                 }
             },
-            _bookId: {
-                type: Number,
-                value: function() {
-                    return 1;
-                }
-            }
+            bookId: Number
         }
 
     });
+
 </script>
