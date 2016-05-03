@@ -7,7 +7,9 @@
 <link rel="import" href="../my_components/comment-section.html">
 <link rel="import" href="../my_components/book-card.html">
 <link rel="import" href="../my_components/relatedBooks-section.html">
+<link rel="import" href="..//relatedBooks-section.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
 
 
 <dom-module id="bookDetail-section">
@@ -68,25 +70,33 @@
 
         <!--BOOK DETAIL START-->
         <div class="layout horizontal book-detail">
-            <iron-grid>
-                <div class="xs12 s12 m2">
-                    <template is="dom-if" if="[[_book]]">
-                    <iron-image id="heightBook-image" alt="The book" src="[[_book.image]]"></iron-image>
-                    </template>
-                </div>
-                <div class="xs12 s12 m10">
-                    <div class="xs12">
-                        <div class="xs12 s12 m6"><h1 style="margin:1rem">[[_book.title]]</h1></div>
-                        <div class="xs12 s12 m6" ><h2 class="available" style="margin-bottom:1rem">AVAILABLE</h2></div>
-                        <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">[[_book.price]]</h1></div>
-                        <div class="xs12" style="margin-left:1rem"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
+            <template is="dom-if" if="[[_book]]">
+                <iron-grid>
+                    <div class="xs12 s12 m2">
+
+                        <iron-image id="heightBook-image" alt="The book" src="[[_book.image]]"></iron-image>
+
+
                     </div>
-                    <div class="xs12 book-spec">
-                        <p>[[_book.desc1]]</p>
-                        <p>[[_book.desc2]]</p>
+                    <div class="xs12 s12 m10">
+                        <div class="xs12">
+                            <div class="xs12 s12 m6"><h1 style="margin:1rem">[[_book.title]]</h1></div>
+                            <div class="xs12 s12 m6" ><h2 class="available" style="margin-bottom:1rem">AVAILABLE</h2></div>
+                            <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">[[_book.price]]</h1></div>
+                            <div class="xs12" style="margin-left:1rem"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
+                        </div>
+                        <div class="xs12 book-spec">
+                            <p>[[_book.desc1]]</p>
+                            <p>[[_book.desc2]]</p>
+                        </div>
                     </div>
+                </iron-grid>
+            </template>
+            <template is="dom-if" if="[[!_book]]">
+                <div style="display: block; margin-right: auto; margin-left: auto; margin-top: 1rem; margin-bottom: 1rem">
+                    <iron-image alt="The book" src="../Resources/spinner.gif"></iron-image>
                 </div>
-            </iron-grid>
+            </template>
         </div>
         <!--BOOK DETAIL END-->
         <!--COMMENTS START-->

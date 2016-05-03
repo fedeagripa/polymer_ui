@@ -1,0 +1,8 @@
+{
+  "name": "star-ratings",
+  "dependencies": {
+    "polymer": "Polymer/polymer#>=1.0.0",
+    "iron-icon": "PolymerElements/iron-icon",
+    "iron-a11y-keys": "PolymerElements/iron-a11y-keys"
+  }
+}
