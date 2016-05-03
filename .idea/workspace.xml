@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30ce0959-2050-46f4-ab7c-e3af50c6e126" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/api/2/book.json" afterPath="$PROJECT_DIR$/Demo/api/2/book.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/api/3/book.json" afterPath="$PROJECT_DIR$/Demo/api/3/book.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_components/page-header.html" afterPath="$PROJECT_DIR$/my_components/page-header.html" />
     </list>
     <ignored path="repo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,6 +38,16 @@
                 <element signature="n#style#0;n#h4#0;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-header.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my_components/page-header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.60674155">
+              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="book.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/api/3/book.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13108614">
+            <state vertical-scroll-proportion="-4.375">
               <caret line="7" column="771" selection-start-line="7" selection-start-column="771" selection-end-line="7" selection-end-column="771" />
               <folding />
             </state>
@@ -132,7 +141,6 @@
       <list>
         <option value="$PROJECT_DIR$/book-card.html" />
         <option value="$PROJECT_DIR$/my_components/comment-card.html" />
-        <option value="$PROJECT_DIR$/my_components/page-header.html" />
         <option value="$PROJECT_DIR$/Demo/show.html" />
         <option value="$PROJECT_DIR$/my_components/book-card.html" />
         <option value="$PROJECT_DIR$/Demo/index.html" />
@@ -142,6 +150,7 @@
         <option value="$PROJECT_DIR$/my_components/bookDetail-section.html" />
         <option value="$PROJECT_DIR$/Demo/api/2/book.json" />
         <option value="$PROJECT_DIR$/Demo/api/3/book.json" />
+        <option value="$PROJECT_DIR$/my_components/page-header.html" />
       </list>
     </option>
   </component>
@@ -195,6 +204,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,14 +558,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_components/page-header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/api/comments.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -663,8 +678,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/api/3/book.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13108614">
+        <state vertical-scroll-proportion="-4.375">
           <caret line="7" column="771" selection-start-line="7" selection-start-column="771" selection-end-line="7" selection-end-column="771" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_components/page-header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60674155">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
           <folding />
         </state>
       </provider>

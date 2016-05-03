@@ -69,10 +69,19 @@ Example:
             height: 20.38rem;
         }
 
+        .banner-container.small {
+            background-image: url("../Resources/banner-small.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right center;
+            position: relative;
+            height: 20.38rem;
+        }
+
     </style>
     <template>
         <iron-media-query query="[[mediaQuery]]" query-matches="{{tooSmall}}"></iron-media-query>
-        <div class="banner-container">
+        <div id="bannerContainer" class="banner-container">
             <h1 id="header1" class="banner-header">[[banner.header1]]</h1>
             <h2 id="header2" class="banner-subtitle">[[banner.header2]]</h2>
         </div>
@@ -106,6 +115,7 @@ Example:
         _tooSmallChanged: function(newValue, oldValue) {
             this.toggleClass('small', newValue,this.$.header1);
             this.toggleClass('small', newValue,this.$.header2);
+            this.toggleClass('small', newValue,this.$.bannerContainer);
         },
     });
 </script>
