@@ -2,6 +2,7 @@
    {
 	 "id":1,
 	 "spec": {
+	   "id":"1",
 	 	"name": "DIVERGENT",
 	 	"image": "../Resources/book1.jpg",
 	 	"price": "$199",
@@ -12,6 +13,7 @@
    {
 	 "id":2,
 	 "spec": {
+	   "id":"2",
 	   "name": "DIVERGENT",
 	   "image": "../Resources/book2.jpg",
 	   "price": "$199",
@@ -22,6 +24,7 @@
    {
 	 "id":3,
 	 "spec": {
+	   "id":"3",
 	   "name": "DIVERGENT",
 	   "image": "../Resources/book3.jpg",
 	   "price": "$199",

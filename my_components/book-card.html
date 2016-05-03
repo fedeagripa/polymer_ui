@@ -67,7 +67,7 @@ Example:
                 <div class="xs12"><iron-image sizing="contain" src="[[book.image]]"></iron-image></div>
                 <div class="xs12"><span id="book-name">[[ book.name ]]</span></div>
                 <div class="xs12"><span id="book-price">[[book.price]]</span></div>
-                <div class="xs12"><paper-button id="buy-button">Buy</paper-button></div>
+                <div class="xs12"><paper-button id="buy-button"><a style="color: white;text-decoration: none" href="Show.html?[[book.id]]">Buy</a></paper-button></div>
             </iron-grid>
         </div>
     </template>
@@ -83,10 +83,14 @@ Example:
                         name: 'DefaultName',
                         image: '../Resources/book1.jpg',
                         price: '$199',
+                        id:'1'
                     };
                 }
             },
 
         }
     });
+
+
+
 </script>
