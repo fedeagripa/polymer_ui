@@ -7,8 +7,8 @@
 <link rel="import" href="../my_components/comment-section.html">
 <link rel="import" href="../my_components/book-card.html">
 <link rel="import" href="../my_components/relatedBooks-section.html">
-<link rel="import" href="..//relatedBooks-section.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../my_components/star-ratings-master/star-ratings.html">
 
 
 
@@ -83,6 +83,7 @@
                             <div class="xs12 s12 m6"><h1 style="margin:1rem">[[_book.title]]</h1></div>
                             <div class="xs12 s12 m6" ><h2 class="available" style="margin-bottom:1rem">AVAILABLE</h2></div>
                             <div class="xs12" ><h1 style="margin-bottom:1rem;margin-top:0;margin-left:1rem">[[_book.price]]</h1></div>
+                            <div class="xs12 s12 m6"><star-ratings style="margin-bottom:1rem;margin-top:0;margin-left:1rem" value="[[_book.rating]]"></star-ratings></div>
                             <div class="xs12" style="margin-left:1rem"><paper-button style="background-color:#0b132b;color:white">Buy</paper-button></div>
                         </div>
                         <div class="xs12 book-spec">
