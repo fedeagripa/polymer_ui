@@ -17,6 +17,7 @@
     <link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
     <link rel="import" href="../my_components/book-card.html">
     <link rel="import" href="../my_components/page-header.html">
+    <link rel="import" href="../my_components/relatedBooks-section.html">
 
     <style is="custom-style">
         body{
@@ -146,14 +147,7 @@
     </iron-grid>
 </div>
 <div class="books-container">
-    <iron-grid>
-        <div class="m4 s6 xs12"><book-card
-                book='{"name": "Divergent", "image": "../Resources/book1.jpg", "price":"$199"}'></book-card></div>
-        <div class="m4 s6 xs12"><book-card
-                book='{"name": "Insurgent", "image": "../Resources/book2.jpg", "price":"$199"}'></book-card></div>
-        <div class="m4 s6 xs12"><book-card
-                book='{"name": "Allegiant", "image": "../Resources/book3.jpg", "price":"$199"}'></book-card></div>
-    </iron-grid>
+    <relatedBooks-section></relatedBooks-section>
 </div>
 <div class="footer">
     <iron-grid>

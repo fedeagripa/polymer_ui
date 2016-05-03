@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30ce0959-2050-46f4-ab7c-e3af50c6e126" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_components/book-card.html" afterPath="$PROJECT_DIR$/my_components/book-card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/api/book.json" afterPath="$PROJECT_DIR$/Demo/api/book.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/api/1/book.json" afterPath="$PROJECT_DIR$/Demo/api/1/book.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/api/2/book.json" afterPath="$PROJECT_DIR$/Demo/api/2/book.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/api/3/book.json" afterPath="$PROJECT_DIR$/Demo/api/3/book.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/my_components/relatedBooks-section.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_components/bookDetail-section.html" afterPath="$PROJECT_DIR$/my_components/bookDetail-section.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Demo/index.html" afterPath="$PROJECT_DIR$/Demo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="repo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,36 +26,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="book.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/api/book.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.235294">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="book.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/api/3/book.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookDetail-section.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bookDetail-section.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_components/bookDetail-section.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5730337">
-              <caret line="83" column="86" selection-start-line="83" selection-start-column="86" selection-end-line="83" selection-end-column="86" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="78" selection-start-line="1" selection-start-column="78" selection-end-line="2" selection-end-column="71" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demo/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9213483">
+              <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="relatedBooks-section.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_components/relatedBooks-section.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.75">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,14 +90,15 @@
         <option value="$PROJECT_DIR$/book-card.html" />
         <option value="$PROJECT_DIR$/my_components/comment-card.html" />
         <option value="$PROJECT_DIR$/my_components/page-header.html" />
-        <option value="$PROJECT_DIR$/Demo/index.html" />
         <option value="$PROJECT_DIR$/Demo/show.html" />
-        <option value="$PROJECT_DIR$/my_components/bookDetail-section.html" />
         <option value="$PROJECT_DIR$/Demo/api/1/book.json" />
         <option value="$PROJECT_DIR$/Demo/api/3/book.json" />
         <option value="$PROJECT_DIR$/Demo/api/2/book.json" />
         <option value="$PROJECT_DIR$/Demo/api/book.json" />
         <option value="$PROJECT_DIR$/my_components/book-card.html" />
+        <option value="$PROJECT_DIR$/my_components/bookDetail-section.html" />
+        <option value="$PROJECT_DIR$/my_components/relatedBooks-section.html" />
+        <option value="$PROJECT_DIR$/Demo/index.html" />
       </list>
     </option>
   </component>
@@ -201,72 +201,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -284,11 +218,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/my_components" />
       <recent name="$PROJECT_DIR$/Demo/api" />
       <recent name="$PROJECT_DIR$/Demo/api/3" />
       <recent name="$PROJECT_DIR$/Demo/api/2" />
       <recent name="$PROJECT_DIR$/Demo/api/1" />
-      <recent name="$PROJECT_DIR$/my_components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/my_components" />
@@ -530,14 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18726592">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.625">
@@ -609,13 +535,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_components/bookDetail-section.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5730337">
-          <caret line="83" column="86" selection-start-line="83" selection-start-column="86" selection-end-line="83" selection-end-column="86" />
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="78" selection-start-line="1" selection-start-column="78" selection-end-line="2" selection-end-column="71" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#2;n#template#0;n#dom-module#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_components/relatedBooks-section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.75">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9213483">
+          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>

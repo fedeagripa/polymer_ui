@@ -6,6 +6,7 @@
 <link rel="import" href="../my_components/comment-card.html">
 <link rel="import" href="../my_components/comment-section.html">
 <link rel="import" href="../my_components/book-card.html">
+<link rel="import" href="../my_components/relatedBooks-section.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
 
@@ -50,12 +51,6 @@
 
         .related-books{
             background-color: #bbb;
-        }
-
-        .books-container{
-            background-color: #bbbbbb;
-            padding: 3rem;
-
         }
 
     </style>
@@ -120,23 +115,7 @@
             <div class="horizontal center-justified layout">
                 <div><h2>Other products of the author</h2></div>
             </div>
-            <iron-ajax
-                    auto
-                    url="../Demo/api/book.json"
-                    params=""
-                    handle-as="json"
-                    last-response="{{_bookArray}}"
-                    debounce-duration="300">
-            </iron-ajax>
-            <div class="books-container">
-                <iron-grid>
-                    <template is="dom-repeat" items="[[ _bookArray ]]">
-                        <div class="m4 s6 xs12">
-                           <book-card
-                                    book='[[item.spec]]'></book-card></div>
-                    </template>
-                </iron-grid>
-            </div>
+            <relatedBooks-section></relatedBooks-section>
         </div>
         <!--RELATED BOOK END-->
 

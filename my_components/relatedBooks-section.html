@@ -1,0 +1,56 @@
+a<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<!--
+A responsive comment card element
+
+Example:
+
+    <comment-card></comment-card>
+
+@demo
+-->
+<link rel="import" href="../bower_components/iron-grid/iron-grid.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="relatedBooks-section">
+    <style>
+        .books-container{
+            background-color: #bbbbbb;
+            padding: 3rem;
+
+        }
+    </style>
+    <template>
+        <iron-ajax
+                auto
+                url="../Demo/api/book.json"
+                params=""
+                handle-as="json"
+                last-response="{{_bookArray}}"
+                debounce-duration="300">
+        </iron-ajax>
+        <div class="books-container">
+            <iron-grid>
+                <template is="dom-repeat" items="[[ _bookArray ]]">
+                    <div class="m4 s6 xs12">
+                        <book-card
+                                book='[[item.spec]]'></book-card></div>
+                </template>
+            </iron-grid>
+        </div>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is: 'relatedBooks-section',
+
+    });
+</script>
